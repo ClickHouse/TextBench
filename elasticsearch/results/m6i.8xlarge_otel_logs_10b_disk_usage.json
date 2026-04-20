@@ -1,0 +1,4867 @@
+{
+  "_shards" : {
+    "total" : 50,
+    "successful" : 50,
+    "failed" : 0
+  },
+  "otel_logs_part_000" : {
+    "store_size" : "245gb",
+    "store_size_in_bytes" : 263130519558,
+    "all_fields" : {
+      "total" : "244.7gb",
+      "total_in_bytes" : 262800955682,
+      "inverted_index" : {
+        "total" : "68.3gb",
+        "total_in_bytes" : 73406806335
+      },
+      "stored_fields" : "61.5gb",
+      "stored_fields_in_bytes" : 66078483599,
+      "doc_values" : "102.4gb",
+      "doc_values_in_bytes" : 110043608047,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12272057701,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.6gb",
+        "total_in_bytes" : 15696667411,
+        "inverted_index" : {
+          "total" : "13.6gb",
+          "total_in_bytes" : 14696667411
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.7gb",
+        "total_in_bytes" : 33033497962,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11279988239
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.2gb",
+        "doc_values_in_bytes" : 21753509723,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.1gb",
+        "total_in_bytes" : 32349759968,
+        "inverted_index" : {
+          "total" : "10.1gb",
+          "total_in_bytes" : 10845784888
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20gb",
+        "doc_values_in_bytes" : 21503975080,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26275360447,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7374020000
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18901340447,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33643025785,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8648375085
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 24994650700,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49694740,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48221805
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.4mb",
+        "doc_values_in_bytes" : 1472935,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "586.8mb",
+        "total_in_bytes" : 615324403,
+        "inverted_index" : {
+          "total" : "266.9mb",
+          "total_in_bytes" : 279899585
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "319.8mb",
+        "doc_values_in_bytes" : 335424818,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47852141,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47852136
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50388870,
+        "inverted_index" : {
+          "total" : "45mb",
+          "total_in_bytes" : 47270406
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3118464,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49089536,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47889261
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1200275,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "712.6mb",
+        "total_in_bytes" : 747249738,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000002,
+        "points" : "235.7mb",
+        "points_in_bytes" : 247249736,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "614.6mb",
+        "total_in_bytes" : 644459288,
+        "inverted_index" : {
+          "total" : "308.9mb",
+          "total_in_bytes" : 323986834
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "305.6mb",
+        "doc_values_in_bytes" : 320472454,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9521332859,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3611759813
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5909573046,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10607988867,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4105696126,
+        "points" : "6gb",
+        "points_in_bytes" : 6502292741,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "343.8mb",
+        "total_in_bytes" : 360551821,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "133.9mb",
+        "doc_values_in_bytes" : 140450287,
+        "points" : "209.9mb",
+        "points_in_bytes" : 220101534,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "347mb",
+        "total_in_bytes" : 363916010,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "102.9mb",
+        "doc_values_in_bytes" : 107959158,
+        "points" : "244mb",
+        "points_in_bytes" : 255956852,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.4gb",
+        "total_in_bytes" : 14431374350,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5640421611
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.1gb",
+        "doc_values_in_bytes" : 8790952739,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11gb",
+        "total_in_bytes" : 11916330779,
+        "inverted_index" : {
+          "total" : "9.7gb",
+          "total_in_bytes" : 10514669261
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1401661518,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7720268626,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2673811788,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046456838,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.2gb",
+        "total_in_bytes" : 64676822081,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.2gb",
+        "stored_fields_in_bytes" : 64676822081,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_001" : {
+    "store_size" : "246gb",
+    "store_size_in_bytes" : 264192140004,
+    "all_fields" : {
+      "total" : "245.7gb",
+      "total_in_bytes" : 263850980496,
+      "inverted_index" : {
+        "total" : "69gb",
+        "total_in_bytes" : 74193881940
+      },
+      "stored_fields" : "61.6gb",
+      "stored_fields_in_bytes" : 66232039150,
+      "doc_values" : "102.5gb",
+      "doc_values_in_bytes" : 110144778358,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12280281048,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.5gb",
+        "total_in_bytes" : 15666953572,
+        "inverted_index" : {
+          "total" : "13.6gb",
+          "total_in_bytes" : 14666953572
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.7gb",
+        "total_in_bytes" : 33054532018,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11299858277
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.2gb",
+        "doc_values_in_bytes" : 21754673741,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.1gb",
+        "total_in_bytes" : 32358869102,
+        "inverted_index" : {
+          "total" : "10.1gb",
+          "total_in_bytes" : 10856654191
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20gb",
+        "doc_values_in_bytes" : 21502214911,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26266962426,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7365396657
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18901565769,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33628385342,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8644031766
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 24984353576,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49629588,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48195658
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1433930,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "609.5mb",
+        "total_in_bytes" : 639187777,
+        "inverted_index" : {
+          "total" : "268.1mb",
+          "total_in_bytes" : 281180740
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "341.4mb",
+        "doc_values_in_bytes" : 358007037,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47851988,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47851983
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50341788,
+        "inverted_index" : {
+          "total" : "45mb",
+          "total_in_bytes" : 47284901
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3056887,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49087499,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47888695
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1198804,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "712mb",
+        "total_in_bytes" : 746620088,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000001,
+        "points" : "235.1mb",
+        "points_in_bytes" : 246620087,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "616.5mb",
+        "total_in_bytes" : 646472182,
+        "inverted_index" : {
+          "total" : "309.5mb",
+          "total_in_bytes" : 324563290
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "306.9mb",
+        "doc_values_in_bytes" : 321908892,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.9gb",
+        "total_in_bytes" : 9558244951,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3625338402
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5932906549,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10613409149,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4105368757,
+        "points" : "6gb",
+        "points_in_bytes" : 6508040392,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "346.3mb",
+        "total_in_bytes" : 363159071,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "134.6mb",
+        "doc_values_in_bytes" : 141209950,
+        "points" : "211.6mb",
+        "points_in_bytes" : 221949121,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "348.7mb",
+        "total_in_bytes" : 365647356,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "103.4mb",
+        "doc_values_in_bytes" : 108435205,
+        "points" : "245.2mb",
+        "points_in_bytes" : 257212151,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.5gb",
+        "total_in_bytes" : 14540544486,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5683897008
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.2gb",
+        "doc_values_in_bytes" : 8856647478,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.7gb",
+        "total_in_bytes" : 12662340885,
+        "inverted_index" : {
+          "total" : "10.4gb",
+          "total_in_bytes" : 11254786800
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1407554085,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7718256163,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2671796866,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046459297,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.3gb",
+        "total_in_bytes" : 64824485065,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.3gb",
+        "stored_fields_in_bytes" : 64824485065,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_002" : {
+    "store_size" : "246.6gb",
+    "store_size_in_bytes" : 264832170705,
+    "all_fields" : {
+      "total" : "246.3gb",
+      "total_in_bytes" : 264470198490,
+      "inverted_index" : {
+        "total" : "68.8gb",
+        "total_in_bytes" : 73964623322
+      },
+      "stored_fields" : "61.6gb",
+      "stored_fields_in_bytes" : 66239036126,
+      "doc_values" : "103.3gb",
+      "doc_values_in_bytes" : 110993962591,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12272576451,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.6gb",
+        "total_in_bytes" : 15782523643,
+        "inverted_index" : {
+          "total" : "13.7gb",
+          "total_in_bytes" : 14782523643
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33696130445,
+        "inverted_index" : {
+          "total" : "10.7gb",
+          "total_in_bytes" : 11582234750
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.5gb",
+        "doc_values_in_bytes" : 22113895695,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.7gb",
+        "total_in_bytes" : 32971195524,
+        "inverted_index" : {
+          "total" : "10.3gb",
+          "total_in_bytes" : 11128389139
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.3gb",
+        "doc_values_in_bytes" : 21842806385,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26284931884,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7332896762
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18952035122,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33656752747,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8611143861
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.3gb",
+        "doc_values_in_bytes" : 25045608886,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49676036,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48215413
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1460623,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "771.2mb",
+        "total_in_bytes" : 808678184,
+        "inverted_index" : {
+          "total" : "268.4mb",
+          "total_in_bytes" : 281526620
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "502.7mb",
+        "doc_values_in_bytes" : 527151564,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47851983,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47851978
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50406415,
+        "inverted_index" : {
+          "total" : "45.1mb",
+          "total_in_bytes" : 47337199
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3069216,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49100486,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47889689
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1210797,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "713.1mb",
+        "total_in_bytes" : 747836087,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000002,
+        "points" : "236.3mb",
+        "points_in_bytes" : 247836085,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "619.5mb",
+        "total_in_bytes" : 649665819,
+        "inverted_index" : {
+          "total" : "309.5mb",
+          "total_in_bytes" : 324549564
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "310mb",
+        "doc_values_in_bytes" : 325116255,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9465788633,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3582241667
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.4gb",
+        "doc_values_in_bytes" : 5883546966,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10608023167,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4108717282,
+        "points" : "6gb",
+        "points_in_bytes" : 6499305885,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "348.6mb",
+        "total_in_bytes" : 365555329,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "136.1mb",
+        "doc_values_in_bytes" : 142747434,
+        "points" : "212.4mb",
+        "points_in_bytes" : 222807895,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "347.1mb",
+        "total_in_bytes" : 364037717,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "102.8mb",
+        "doc_values_in_bytes" : 107868870,
+        "points" : "244.3mb",
+        "points_in_bytes" : 256168847,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.3gb",
+        "total_in_bytes" : 14376399708,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5612286928
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.1gb",
+        "doc_values_in_bytes" : 8764112780,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.1gb",
+        "total_in_bytes" : 11939693183,
+        "inverted_index" : {
+          "total" : "9.8gb",
+          "total_in_bytes" : 10535536109
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1404157074,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7721072448,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2674614709,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046457739,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.3gb",
+        "total_in_bytes" : 64834879052,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.3gb",
+        "stored_fields_in_bytes" : 64834879052,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_003" : {
+    "store_size" : "246.1gb",
+    "store_size_in_bytes" : 264250700753,
+    "all_fields" : {
+      "total" : "245.7gb",
+      "total_in_bytes" : 263895589681,
+      "inverted_index" : {
+        "total" : "69gb",
+        "total_in_bytes" : 74148942334
+      },
+      "stored_fields" : "61.7gb",
+      "stored_fields_in_bytes" : 66296196806,
+      "doc_values" : "102.6gb",
+      "doc_values_in_bytes" : 110175633178,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12274817363,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.5gb",
+        "total_in_bytes" : 15665878689,
+        "inverted_index" : {
+          "total" : "13.6gb",
+          "total_in_bytes" : 14665878689
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.7gb",
+        "total_in_bytes" : 33068126838,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11301688872
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.2gb",
+        "doc_values_in_bytes" : 21766437966,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.1gb",
+        "total_in_bytes" : 32370591857,
+        "inverted_index" : {
+          "total" : "10.1gb",
+          "total_in_bytes" : 10858497550
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20gb",
+        "doc_values_in_bytes" : 21512094307,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26243363653,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7336903104
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18906460549,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33610654739,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8618301253
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 24992353486,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49665488,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48211021
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1454467,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "592.4mb",
+        "total_in_bytes" : 621205138,
+        "inverted_index" : {
+          "total" : "269.6mb",
+          "total_in_bytes" : 282706284
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "322.8mb",
+        "doc_values_in_bytes" : 338498854,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47851983,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47851978
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50435228,
+        "inverted_index" : {
+          "total" : "45.1mb",
+          "total_in_bytes" : 47347544
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3087684,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49088762,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47888913
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1199849,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "711.9mb",
+        "total_in_bytes" : 746495258,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000001,
+        "points" : "235mb",
+        "points_in_bytes" : 246495257,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "615.1mb",
+        "total_in_bytes" : 645002847,
+        "inverted_index" : {
+          "total" : "309.5mb",
+          "total_in_bytes" : 324591218
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "305.5mb",
+        "doc_values_in_bytes" : 320411629,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.9gb",
+        "total_in_bytes" : 9566631795,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3621299898
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5945331897,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10605197427,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4102558858,
+        "points" : "6gb",
+        "points_in_bytes" : 6502638569,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "344.1mb",
+        "total_in_bytes" : 360912409,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "133.7mb",
+        "doc_values_in_bytes" : 140265813,
+        "points" : "210.4mb",
+        "points_in_bytes" : 220646596,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "350.5mb",
+        "total_in_bytes" : 367581598,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "103.9mb",
+        "doc_values_in_bytes" : 109005678,
+        "points" : "246.5mb",
+        "points_in_bytes" : 258575920,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.5gb",
+        "total_in_bytes" : 14540847410,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5676499781
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.2gb",
+        "doc_values_in_bytes" : 8864347629,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.8gb",
+        "total_in_bytes" : 12679347341,
+        "inverted_index" : {
+          "total" : "10.4gb",
+          "total_in_bytes" : 11271276229
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1408071112,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7718585527,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2672124506,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046461021,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.4gb",
+        "total_in_bytes" : 64888125694,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.4gb",
+        "stored_fields_in_bytes" : 64888125694,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_004" : {
+    "store_size" : "246.1gb",
+    "store_size_in_bytes" : 264258550839,
+    "all_fields" : {
+      "total" : "245.7gb",
+      "total_in_bytes" : 263922920165,
+      "inverted_index" : {
+        "total" : "69.1gb",
+        "total_in_bytes" : 74223757033
+      },
+      "stored_fields" : "61.7gb",
+      "stored_fields_in_bytes" : 66259686633,
+      "doc_values" : "102.5gb",
+      "doc_values_in_bytes" : 110164966713,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12274509786,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.6gb",
+        "total_in_bytes" : 15712819596,
+        "inverted_index" : {
+          "total" : "13.7gb",
+          "total_in_bytes" : 14712819596
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.8gb",
+        "total_in_bytes" : 33098512806,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11307239535
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.2gb",
+        "doc_values_in_bytes" : 21791273271,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.1gb",
+        "total_in_bytes" : 32410457217,
+        "inverted_index" : {
+          "total" : "10.1gb",
+          "total_in_bytes" : 10871086316
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20gb",
+        "doc_values_in_bytes" : 21539370901,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26262816175,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7357676696
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18905139479,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33633197177,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8634484782
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 24998712395,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49670999,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48216549
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1454450,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "590.3mb",
+        "total_in_bytes" : 619009447,
+        "inverted_index" : {
+          "total" : "268.5mb",
+          "total_in_bytes" : 281547724
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "321.8mb",
+        "doc_values_in_bytes" : 337461723,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47852133,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47852128
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50403921,
+        "inverted_index" : {
+          "total" : "45.1mb",
+          "total_in_bytes" : 47293682
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3110239,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49088085,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47889280
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1198805,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "713.5mb",
+        "total_in_bytes" : 748222369,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000002,
+        "points" : "236.7mb",
+        "points_in_bytes" : 248222367,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "618.9mb",
+        "total_in_bytes" : 649049626,
+        "inverted_index" : {
+          "total" : "309.4mb",
+          "total_in_bytes" : 324525587
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "309.4mb",
+        "doc_values_in_bytes" : 324524039,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9529659143,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3607230242
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5922428901,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10609160004,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4106884512,
+        "points" : "6gb",
+        "points_in_bytes" : 6502275492,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "343.2mb",
+        "total_in_bytes" : 359875736,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "133.4mb",
+        "doc_values_in_bytes" : 139883669,
+        "points" : "209.8mb",
+        "points_in_bytes" : 219992067,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "349.1mb",
+        "total_in_bytes" : 366135520,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "103.5mb",
+        "doc_values_in_bytes" : 108572689,
+        "points" : "245.6mb",
+        "points_in_bytes" : 257562831,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.4gb",
+        "total_in_bytes" : 14464822820,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5646499446
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.2gb",
+        "doc_values_in_bytes" : 8818323374,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.8gb",
+        "total_in_bytes" : 12696954961,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11289395470
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1407559491,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7713085288,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2666628259,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046457029,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.3gb",
+        "total_in_bytes" : 64852127142,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.3gb",
+        "stored_fields_in_bytes" : 64852127142,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_005" : {
+    "store_size" : "245.7gb",
+    "store_size_in_bytes" : 263920486719,
+    "all_fields" : {
+      "total" : "245.4gb",
+      "total_in_bytes" : 263509032228,
+      "inverted_index" : {
+        "total" : "68.9gb",
+        "total_in_bytes" : 73998186941
+      },
+      "stored_fields" : "61.6gb",
+      "stored_fields_in_bytes" : 66203327091,
+      "doc_values" : "102.4gb",
+      "doc_values_in_bytes" : 110033023492,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12274494704,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.5gb",
+        "total_in_bytes" : 15656635283,
+        "inverted_index" : {
+          "total" : "13.6gb",
+          "total_in_bytes" : 14656635283
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.7gb",
+        "total_in_bytes" : 33004073291,
+        "inverted_index" : {
+          "total" : "10.4gb",
+          "total_in_bytes" : 11273293614
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.2gb",
+        "doc_values_in_bytes" : 21730779677,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30gb",
+        "total_in_bytes" : 32316346528,
+        "inverted_index" : {
+          "total" : "10gb",
+          "total_in_bytes" : 10834091007
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20gb",
+        "doc_values_in_bytes" : 21482255521,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26263380637,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7363054817
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18900325820,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33635514841,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8638759087
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 24996755754,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49689930,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48225203
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1464727,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "587.7mb",
+        "total_in_bytes" : 616265526,
+        "inverted_index" : {
+          "total" : "267.8mb",
+          "total_in_bytes" : 280834040
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "319.8mb",
+        "doc_values_in_bytes" : 335431486,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47852137,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47852132
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50390528,
+        "inverted_index" : {
+          "total" : "45.1mb",
+          "total_in_bytes" : 47333624
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3056904,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49090063,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47889601
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1200462,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "712.2mb",
+        "total_in_bytes" : 746857578,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000001,
+        "points" : "235.4mb",
+        "points_in_bytes" : 246857577,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "617.2mb",
+        "total_in_bytes" : 647281061,
+        "inverted_index" : {
+          "total" : "309.6mb",
+          "total_in_bytes" : 324708660
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "307.6mb",
+        "doc_values_in_bytes" : 322572401,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9509944530,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3600956842
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5908987688,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10612608273,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4108937877,
+        "points" : "6gb",
+        "points_in_bytes" : 6503670396,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "344.1mb",
+        "total_in_bytes" : 360897053,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "133.7mb",
+        "doc_values_in_bytes" : 140226063,
+        "points" : "210.4mb",
+        "points_in_bytes" : 220670990,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "348.1mb",
+        "total_in_bytes" : 365075140,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "103.2mb",
+        "doc_values_in_bytes" : 108238230,
+        "points" : "244.9mb",
+        "points_in_bytes" : 256836910,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.4gb",
+        "total_in_bytes" : 14469640416,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5650653256
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.2gb",
+        "doc_values_in_bytes" : 8818987160,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.7gb",
+        "total_in_bytes" : 12590662913,
+        "inverted_index" : {
+          "total" : "10.4gb",
+          "total_in_bytes" : 11183899775
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1406763138,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7720262547,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2673803716,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046458831,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.3gb",
+        "total_in_bytes" : 64796563953,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.3gb",
+        "stored_fields_in_bytes" : 64796563953,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_006" : {
+    "store_size" : "245.5gb",
+    "store_size_in_bytes" : 263614564515,
+    "all_fields" : {
+      "total" : "245.2gb",
+      "total_in_bytes" : 263287404451,
+      "inverted_index" : {
+        "total" : "68.9gb",
+        "total_in_bytes" : 74067796389
+      },
+      "stored_fields" : "61.4gb",
+      "stored_fields_in_bytes" : 65939776287,
+      "doc_values" : "102.4gb",
+      "doc_values_in_bytes" : 110013332946,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12266498829,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.6gb",
+        "total_in_bytes" : 15705171290,
+        "inverted_index" : {
+          "total" : "13.6gb",
+          "total_in_bytes" : 14705171290
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.7gb",
+        "total_in_bytes" : 33048511724,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11275935863
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.2gb",
+        "doc_values_in_bytes" : 21772575861,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.1gb",
+        "total_in_bytes" : 32365612970,
+        "inverted_index" : {
+          "total" : "10gb",
+          "total_in_bytes" : 10842327518
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20gb",
+        "doc_values_in_bytes" : 21523285452,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26257188441,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7362703534
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.5gb",
+        "doc_values_in_bytes" : 18894484907,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33635492182,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8634900179
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 25000592003,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49628595,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48194648
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1433947,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "589mb",
+        "total_in_bytes" : 617690277,
+        "inverted_index" : {
+          "total" : "267.7mb",
+          "total_in_bytes" : 280722963
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "321.3mb",
+        "doc_values_in_bytes" : 336967314,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47851825,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47851820
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48.1mb",
+        "total_in_bytes" : 50440531,
+        "inverted_index" : {
+          "total" : "45.1mb",
+          "total_in_bytes" : 47334379
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3106152,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49089514,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47889465
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1200049,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "714.9mb",
+        "total_in_bytes" : 749704736,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000002,
+        "points" : "238.1mb",
+        "points_in_bytes" : 249704734,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "618.9mb",
+        "total_in_bytes" : 648972851,
+        "inverted_index" : {
+          "total" : "309.5mb",
+          "total_in_bytes" : 324565670
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "309.3mb",
+        "doc_values_in_bytes" : 324407181,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9464836866,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3578613009
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.4gb",
+        "doc_values_in_bytes" : 5886223857,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10598639692,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4102362295,
+        "points" : "6gb",
+        "points_in_bytes" : 6496277397,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "339.8mb",
+        "total_in_bytes" : 356310652,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "132.3mb",
+        "doc_values_in_bytes" : 138818477,
+        "points" : "207.4mb",
+        "points_in_bytes" : 217492175,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "347.7mb",
+        "total_in_bytes" : 364672630,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "103mb",
+        "doc_values_in_bytes" : 108106902,
+        "points" : "244.6mb",
+        "points_in_bytes" : 256565728,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.3gb",
+        "total_in_bytes" : 14348502495,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5597164209
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.1gb",
+        "doc_values_in_bytes" : 8751338286,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.8gb",
+        "total_in_bytes" : 12674548776,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11274421842
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1400126934,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7714889051,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2668430256,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046458795,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.1gb",
+        "total_in_bytes" : 64539649353,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.1gb",
+        "stored_fields_in_bytes" : 64539649353,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_007" : {
+    "store_size" : "245.8gb",
+    "store_size_in_bytes" : 263981535292,
+    "all_fields" : {
+      "total" : "245.6gb",
+      "total_in_bytes" : 263722307044,
+      "inverted_index" : {
+        "total" : "69.1gb",
+        "total_in_bytes" : 74249551598
+      },
+      "stored_fields" : "61.5gb",
+      "stored_fields_in_bytes" : 66065413366,
+      "doc_values" : "102.5gb",
+      "doc_values_in_bytes" : 110129055665,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12278286415,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.5gb",
+        "total_in_bytes" : 15670284990,
+        "inverted_index" : {
+          "total" : "13.6gb",
+          "total_in_bytes" : 14670284990
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.8gb",
+        "total_in_bytes" : 33077398424,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11300555088
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.2gb",
+        "doc_values_in_bytes" : 21776843336,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.1gb",
+        "total_in_bytes" : 32391996478,
+        "inverted_index" : {
+          "total" : "10.1gb",
+          "total_in_bytes" : 10863996189
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20gb",
+        "doc_values_in_bytes" : 21528000289,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26264394503,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7353835297
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18910559206,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33630282886,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8628081731
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 25002201155,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49658017,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48207671
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1450346,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "586.2mb",
+        "total_in_bytes" : 614704838,
+        "inverted_index" : {
+          "total" : "266.8mb",
+          "total_in_bytes" : 279849425
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "319.3mb",
+        "doc_values_in_bytes" : 334855413,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47851983,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47851978
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50390974,
+        "inverted_index" : {
+          "total" : "45mb",
+          "total_in_bytes" : 47274579
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3116395,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49088543,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47889738
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1198805,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "711.7mb",
+        "total_in_bytes" : 746280501,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000001,
+        "points" : "234.8mb",
+        "points_in_bytes" : 246280500,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "613.5mb",
+        "total_in_bytes" : 643351283,
+        "inverted_index" : {
+          "total" : "308.9mb",
+          "total_in_bytes" : 323908552
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "304.6mb",
+        "doc_values_in_bytes" : 319442731,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9527007714,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3615207620
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5911800094,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10613350889,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4106032313,
+        "points" : "6gb",
+        "points_in_bytes" : 6507318576,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "347.2mb",
+        "total_in_bytes" : 364169347,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "135.3mb",
+        "doc_values_in_bytes" : 141889132,
+        "points" : "211.9mb",
+        "points_in_bytes" : 222280215,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "347mb",
+        "total_in_bytes" : 363862549,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "102.9mb",
+        "doc_values_in_bytes" : 107913997,
+        "points" : "244mb",
+        "points_in_bytes" : 255948552,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.4gb",
+        "total_in_bytes" : 14459767169,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5653201176
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.2gb",
+        "doc_values_in_bytes" : 8806565993,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.8gb",
+        "total_in_bytes" : 12773109904,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11369407564
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1403702340,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7723645026,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2677186454,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046458572,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.2gb",
+        "total_in_bytes" : 64661711026,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.2gb",
+        "stored_fields_in_bytes" : 64661711026,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_008" : {
+    "store_size" : "246.3gb",
+    "store_size_in_bytes" : 264489746268,
+    "all_fields" : {
+      "total" : "246gb",
+      "total_in_bytes" : 264165327524,
+      "inverted_index" : {
+        "total" : "69.2gb",
+        "total_in_bytes" : 74407070513
+      },
+      "stored_fields" : "61.6gb",
+      "stored_fields_in_bytes" : 66186415962,
+      "doc_values" : "102.7gb",
+      "doc_values_in_bytes" : 110303290232,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12268550817,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.6gb",
+        "total_in_bytes" : 15733572943,
+        "inverted_index" : {
+          "total" : "13.7gb",
+          "total_in_bytes" : 14733572943
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.9gb",
+        "total_in_bytes" : 33253805706,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11378460787
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.3gb",
+        "doc_values_in_bytes" : 21875344919,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.3gb",
+        "total_in_bytes" : 32566331233,
+        "inverted_index" : {
+          "total" : "10.1gb",
+          "total_in_bytes" : 10943292454
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.1gb",
+        "doc_values_in_bytes" : 21623038779,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26267054666,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7361066170
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18905988496,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33636282191,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8636739172
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 24999543019,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49656466,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48206086
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1450380,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "589.2mb",
+        "total_in_bytes" : 617851979,
+        "inverted_index" : {
+          "total" : "267.9mb",
+          "total_in_bytes" : 280931504
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "321.3mb",
+        "doc_values_in_bytes" : 336920475,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47851987,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47851982
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48mb",
+        "total_in_bytes" : 50383617,
+        "inverted_index" : {
+          "total" : "45.1mb",
+          "total_in_bytes" : 47302072
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3081545,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49090227,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47888895
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1201332,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "713.9mb",
+        "total_in_bytes" : 748617290,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000002,
+        "points" : "237mb",
+        "points_in_bytes" : 248617288,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "616mb",
+        "total_in_bytes" : 645947105,
+        "inverted_index" : {
+          "total" : "309.4mb",
+          "total_in_bytes" : 324469087
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "306.5mb",
+        "doc_values_in_bytes" : 321478018,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9517006489,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3606272904
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5910733585,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10599732471,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4101943164,
+        "points" : "6gb",
+        "points_in_bytes" : 6497789307,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "341.6mb",
+        "total_in_bytes" : 358203582,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "132.7mb",
+        "doc_values_in_bytes" : 139211659,
+        "points" : "208.8mb",
+        "points_in_bytes" : 218991923,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "348mb",
+        "total_in_bytes" : 364907211,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "103.2mb",
+        "doc_values_in_bytes" : 108213623,
+        "points" : "244.8mb",
+        "points_in_bytes" : 256693588,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.4gb",
+        "total_in_bytes" : 14448845481,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5644182388
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.1gb",
+        "doc_values_in_bytes" : 8804663093,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.8gb",
+        "total_in_bytes" : 12711607544,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11306834069
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1404773475,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7716936849,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2670478138,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046458711,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.3gb",
+        "total_in_bytes" : 64781642487,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.3gb",
+        "stored_fields_in_bytes" : 64781642487,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  },
+  "otel_logs_part_009" : {
+    "store_size" : "246gb",
+    "store_size_in_bytes" : 264233176813,
+    "all_fields" : {
+      "total" : "245.8gb",
+      "total_in_bytes" : 263947950912,
+      "inverted_index" : {
+        "total" : "69.2gb",
+        "total_in_bytes" : 74347939595
+      },
+      "stored_fields" : "61.5gb",
+      "stored_fields_in_bytes" : 66113019062,
+      "doc_values" : "102.6gb",
+      "doc_values_in_bytes" : 110212942389,
+      "points" : "11.4gb",
+      "points_in_bytes" : 12274049866,
+      "norms" : "953.6mb",
+      "norms_in_bytes" : 1000000000,
+      "term_vectors" : "0b",
+      "term_vectors_in_bytes" : 0,
+      "knn_vectors" : "0b",
+      "knn_vectors_in_bytes" : 0
+    },
+    "fields" : {
+      "Body" : {
+        "total" : "14.6gb",
+        "total_in_bytes" : 15727759598,
+        "inverted_index" : {
+          "total" : "13.7gb",
+          "total_in_bytes" : 14727759598
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "953.6mb",
+        "norms_in_bytes" : 1000000000,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes" : {
+        "total" : "30.8gb",
+        "total_in_bytes" : 33170227739,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11336968611
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.3gb",
+        "doc_values_in_bytes" : 21833259128,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "LogAttributes._keyed" : {
+        "total" : "30.2gb",
+        "total_in_bytes" : 32489458516,
+        "inverted_index" : {
+          "total" : "10.1gb",
+          "total_in_bytes" : 10903544622
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "20.1gb",
+        "doc_values_in_bytes" : 21585913894,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes" : {
+        "total" : "24.4gb",
+        "total_in_bytes" : 26269880362,
+        "inverted_index" : {
+          "total" : "6.8gb",
+          "total_in_bytes" : 7366634572
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "17.6gb",
+        "doc_values_in_bytes" : 18903245790,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceAttributes._keyed" : {
+        "total" : "31.3gb",
+        "total_in_bytes" : 33639689051,
+        "inverted_index" : {
+          "total" : "8gb",
+          "total_in_bytes" : 8641633904
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "23.2gb",
+        "doc_values_in_bytes" : 24998055147,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ResourceSchemaUrl" : {
+        "total" : "47.3mb",
+        "total_in_bytes" : 49688329,
+        "inverted_index" : {
+          "total" : "45.9mb",
+          "total_in_bytes" : 48223619
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.3mb",
+        "doc_values_in_bytes" : 1464710,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeName" : {
+        "total" : "587.3mb",
+        "total_in_bytes" : 615838169,
+        "inverted_index" : {
+          "total" : "267.2mb",
+          "total_in_bytes" : 280233038
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "320mb",
+        "doc_values_in_bytes" : 335605131,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeSchemaUrl" : {
+        "total" : "45.6mb",
+        "total_in_bytes" : 47852136,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47852131
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5b",
+        "doc_values_in_bytes" : 5,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ScopeVersion" : {
+        "total" : "48.1mb",
+        "total_in_bytes" : 50450462,
+        "inverted_index" : {
+          "total" : "45.1mb",
+          "total_in_bytes" : 47307391
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.9mb",
+        "doc_values_in_bytes" : 3143071,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "ServiceName" : {
+        "total" : "46.8mb",
+        "total_in_bytes" : 49089308,
+        "inverted_index" : {
+          "total" : "45.6mb",
+          "total_in_bytes" : 47888814
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "1.1mb",
+        "doc_values_in_bytes" : 1200494,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityNumber" : {
+        "total" : "712.8mb",
+        "total_in_bytes" : 747449997,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "476.8mb",
+        "doc_values_in_bytes" : 500000001,
+        "points" : "235.9mb",
+        "points_in_bytes" : 247449996,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SeverityText" : {
+        "total" : "616mb",
+        "total_in_bytes" : 645970214,
+        "inverted_index" : {
+          "total" : "309.1mb",
+          "total_in_bytes" : 324146907
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "306.9mb",
+        "doc_values_in_bytes" : 321823307,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "SpanId" : {
+        "total" : "8.8gb",
+        "total_in_bytes" : 9519856552,
+        "inverted_index" : {
+          "total" : "3.3gb",
+          "total_in_bytes" : 3610699763
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "5.5gb",
+        "doc_values_in_bytes" : 5909156789,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "Timestamp" : {
+        "total" : "9.8gb",
+        "total_in_bytes" : 10609213092,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "3.8gb",
+        "doc_values_in_bytes" : 4106614135,
+        "points" : "6gb",
+        "points_in_bytes" : 6502598957,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TimestampTime" : {
+        "total" : "345.4mb",
+        "total_in_bytes" : 362200249,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "134.3mb",
+        "doc_values_in_bytes" : 140851890,
+        "points" : "211mb",
+        "points_in_bytes" : 221348359,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceFlags" : {
+        "total" : "347.2mb",
+        "total_in_bytes" : 364161205,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "102.9mb",
+        "doc_values_in_bytes" : 107969401,
+        "points" : "244.3mb",
+        "points_in_bytes" : 256191804,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "TraceId" : {
+        "total" : "13.4gb",
+        "total_in_bytes" : 14428773788,
+        "inverted_index" : {
+          "total" : "5.2gb",
+          "total_in_bytes" : 5638888009
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "8.1gb",
+        "doc_values_in_bytes" : 8789885779,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "__root_doc_for_nested" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_id" : {
+        "total" : "11.8gb",
+        "total_in_bytes" : 12729983862,
+        "inverted_index" : {
+          "total" : "10.5gb",
+          "total_in_bytes" : 11326158616
+        },
+        "stored_fields" : "1.3gb",
+        "stored_fields_in_bytes" : 1403825246,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_primary_term" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_seq_no" : {
+        "total" : "7.1gb",
+        "total_in_bytes" : 7721214467,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "2.4gb",
+        "doc_values_in_bytes" : 2674753717,
+        "points" : "4.6gb",
+        "points_in_bytes" : 5046460750,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_source" : {
+        "total" : "60.2gb",
+        "total_in_bytes" : 64709193816,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "60.2gb",
+        "stored_fields_in_bytes" : 64709193816,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      },
+      "_version" : {
+        "total" : "0b",
+        "total_in_bytes" : 0,
+        "inverted_index" : {
+          "total" : "0b",
+          "total_in_bytes" : 0
+        },
+        "stored_fields" : "0b",
+        "stored_fields_in_bytes" : 0,
+        "doc_values" : "0b",
+        "doc_values_in_bytes" : 0,
+        "points" : "0b",
+        "points_in_bytes" : 0,
+        "norms" : "0b",
+        "norms_in_bytes" : 0,
+        "term_vectors" : "0b",
+        "term_vectors_in_bytes" : 0,
+        "knn_vectors" : "0b",
+        "knn_vectors_in_bytes" : 0
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Editor/tool directories
+.claude/
+.windsurf/
+.agents/
+.agent/
+skills-lock.json
+
+# Benchmark results and raw logs
+
+# Temporary parquet downloads
+/tmp/*.parquet

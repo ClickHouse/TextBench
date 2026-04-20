@@ -1,0 +1,186 @@
+[
+  {
+    "label": "Q1",
+    "description": "Fetch rows \u2014 AND, service filter + time-bounded 30 min",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "Body": { "query": "failed order", "operator": "and" } } }
+          ],
+          "filter": [
+            { "term":  { "ServiceName": "checkout" } },
+            { "range": { "Timestamp": { "gte": "2025-09-23T00:00:00", "lt": "2025-09-23T00:30:00" } } }
+          ]
+        }
+      },
+      "sort": [{ "Timestamp": "desc" }],
+      "_source": ["Timestamp", "ServiceName", "SeverityText", "Body"],
+      "size": 100
+    }
+  },
+  {
+    "label": "Q2",
+    "description": "Fetch rows \u2014 complex boolean, service filter + severity + time-bounded 30 min",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "bool": {
+          "should": [
+            { "match": { "Body": { "query": "connection reset", "operator": "and" } } },
+            { "match": { "Body": "timeout" } }
+          ],
+          "minimum_should_match": 1,
+          "filter": [
+            { "term":  { "ServiceName": "frontend" } },
+            { "range": { "SeverityNumber": { "gte": 13 } } },
+            { "range": { "Timestamp": { "gte": "2025-09-23T00:00:00", "lt": "2025-09-23T00:30:00" } } }
+          ]
+        }
+      },
+      "sort": [{ "Timestamp": "desc" }],
+      "_source": ["Timestamp", "ServiceName", "SeverityText", "Body"],
+      "size": 100
+    }
+  },
+  {
+    "label": "Q3",
+    "description": "Fetch rows \u2014 OR 5 tokens, full corpus, sort by Timestamp",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "match": { "Body": { "query": "error exception failed timeout refused", "operator": "or" } }
+      },
+      "sort": [{ "Timestamp": "desc" }],
+      "_source": ["Timestamp", "ServiceName", "SeverityText", "Body"],
+      "size": 100
+    }
+  },
+  {
+    "label": "Q4",
+    "description": "count() \u2014 single token, full corpus",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": { "match": { "Body": "timeout" } },
+      "size": 0,
+      "track_total_hits": true
+    }
+  },
+  {
+    "label": "Q5",
+    "description": "count() \u2014 OR 5 high-frequency tokens, full corpus",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "match": { "Body": { "query": "error exception failed timeout refused", "operator": "or" } }
+      },
+      "size": 0,
+      "track_total_hits": true
+    }
+  },
+  {
+    "label": "Q6",
+    "description": "GROUP BY service + count \u2014 OR, full corpus",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "match": { "Body": { "query": "exception timeout failed", "operator": "or" } }
+      },
+      "aggs": {
+        "by_service": {
+          "terms": { "field": "ServiceName", "size": 1000, "order": { "_count": "desc" } }
+        }
+      },
+      "size": 0
+    }
+  },
+  {
+    "label": "Q7",
+    "description": "GROUP BY service + count \u2014 AND, full corpus",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "match": { "Body": { "query": "connection reset", "operator": "and" } }
+      },
+      "aggs": {
+        "by_service": {
+          "terms": { "field": "ServiceName", "size": 1000, "order": { "_count": "desc" } }
+        }
+      },
+      "size": 0
+    }
+  },
+  {
+    "label": "Q8",
+    "description": "Date histogram + count \u2014 single token, service filter, full corpus",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "bool": {
+          "must": [ { "match": { "Body": "payment" } } ],
+          "filter": [ { "term": { "ServiceName": "checkout" } } ]
+        }
+      },
+      "aggs": {
+        "by_hour": {
+          "date_histogram": {
+            "field": "Timestamp",
+            "calendar_interval": "hour",
+            "order": { "_key": "asc" }
+          }
+        }
+      },
+      "size": 0
+    }
+  },
+  {
+    "label": "Q9",
+    "description": "Date histogram 1hr + count \u2014 AND, full corpus",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "match": { "Body": { "query": "connection reset", "operator": "and" } }
+      },
+      "aggs": {
+        "by_hour": {
+          "date_histogram": {
+            "field": "Timestamp",
+            "calendar_interval": "hour",
+            "order": { "_key": "asc" }
+          }
+        }
+      },
+      "size": 0
+    }
+  },
+  {
+    "label": "Q10",
+    "description": "GROUP BY service + distinct trace count \u2014 OR, full corpus",
+    "index": "otel_logs",
+    "endpoint": "_search",
+    "body": {
+      "query": {
+        "match": { "Body": { "query": "exception timeout failed", "operator": "or" } }
+      },
+      "aggs": {
+        "by_service": {
+          "terms": { "field": "ServiceName", "size": 1000, "order": { "_count": "desc" } },
+          "aggs": {
+            "unique_traces": { "cardinality": { "field": "TraceId" } }
+          }
+        }
+      },
+      "size": 0
+    }
+  }
+]

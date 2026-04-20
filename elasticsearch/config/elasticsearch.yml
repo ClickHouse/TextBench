@@ -1,0 +1,18 @@
+cluster.name: textbench
+node.name: node-1
+
+path.data: /data/elasticsearch
+path.logs: /data/elasticsearch-logs
+
+network.host: localhost
+http.port: 9200
+
+discovery.type: single-node
+
+# Lock JVM heap in RAM
+bootstrap.memory_lock: true
+
+# Disable security for the benchmark (no TLS, no auth)
+xpack.security.enabled: false
+xpack.security.http.ssl.enabled: false
+xpack.security.transport.ssl.enabled: false

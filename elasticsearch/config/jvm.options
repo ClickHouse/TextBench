@@ -1,0 +1,6 @@
+# m6i.8xlarge has 128 GB RAM.
+# Keep heap at 30 GB — above ~32 GB the JVM disables CompressedOops (4-byte → 8-byte
+# object pointers), which increases heap pressure and hurts performance.
+# The remaining ~98 GB goes to the OS page cache, which Lucene relies on heavily.
+-Xms30g
+-Xmx30g

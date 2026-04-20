@@ -1,0 +1,34 @@
+./create_and_load.sh text_bench_1B otel_logs ~/text_bench 1 success.log error.log 4
+
+./run_queries.sh \
+  --query-file queries_1B.sql \
+  --database text_bench_1B \
+  --machine "m6i.8xlarge, 10000gib gp3" \
+  --dataset-size 1000000000 \
+  --total-size 99560268152 \
+  --data-size 99068986216 \
+  --text-index-size 491281201 > results_1B
+
+
+./create_and_load.sh text_bench_10B otel_logs ~/text_bench 10 success.log error.log 10
+
+./run_queries.sh \
+  --query-file queries_10B.sql \
+  --database text_bench_10B \
+  --machine "m6i.8xlarge, 10000gib gp3" \
+  --dataset-size 1000000000 \
+  --total-size 99560268152 \
+  --data-size 99068986216 \
+  --text-index-size 491281201 > results_10B
+
+
+./create_and_load.sh text_bench_50B otel_logs ~/text_bench 50 success.log error.log 10
+
+./run_queries.sh \
+  --query-file queries_50B.sql \
+  --database text_bench_50B \
+  --machine "m6i.8xlarge, 10000gib gp3" \
+  --dataset-size 1000000000 \
+  --total-size 99560268152 \
+  --data-size 99068986216 \
+  --text-index-size 491281201 > results_50B

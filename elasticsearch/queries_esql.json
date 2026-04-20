@@ -1,0 +1,52 @@
+[
+  {
+    "label": "Q1",
+    "description": "Fetch rows \u2014 AND, service filter + time-bounded 30 min",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"failed order\", {\"operator\": \"and\"}) AND ServiceName == \"checkout\" AND Timestamp >= \"2025-09-23T00:00:00\" AND Timestamp < \"2025-09-23T00:30:00\" | SORT Timestamp DESC | KEEP Timestamp, ServiceName, SeverityText, Body | LIMIT 100"
+  },
+  {
+    "label": "Q2",
+    "description": "Fetch rows \u2014 complex boolean, service filter + severity + time-bounded 30 min",
+    "esql": "FROM otel_logs | WHERE (MATCH(Body, \"connection reset\", {\"operator\": \"and\"}) OR MATCH(Body, \"timeout\")) AND ServiceName == \"frontend\" AND SeverityNumber >= 13 AND Timestamp >= \"2025-09-23T00:00:00\" AND Timestamp < \"2025-09-23T00:30:00\" | SORT Timestamp DESC | KEEP Timestamp, ServiceName, SeverityText, Body | LIMIT 100"
+  },
+  {
+    "label": "Q3",
+    "description": "Fetch rows \u2014 OR 5 tokens, full corpus, sort by Timestamp",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"error exception failed timeout refused\") | SORT Timestamp DESC | KEEP Timestamp, ServiceName, SeverityText, Body | LIMIT 100"
+  },
+  {
+    "label": "Q4",
+    "description": "count() \u2014 single token, full corpus",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"timeout\") | STATS count()"
+  },
+  {
+    "label": "Q5",
+    "description": "count() \u2014 OR 5 high-frequency tokens, full corpus",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"error exception failed timeout refused\") | STATS count()"
+  },
+  {
+    "label": "Q6",
+    "description": "GROUP BY service + count \u2014 OR, full corpus",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"exception timeout failed\") | STATS cnt = COUNT() BY ServiceName | SORT cnt DESC"
+  },
+  {
+    "label": "Q7",
+    "description": "GROUP BY service + count \u2014 AND, full corpus",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"connection reset\", {\"operator\": \"and\"}) | STATS cnt = COUNT() BY ServiceName | SORT cnt DESC"
+  },
+  {
+    "label": "Q8",
+    "description": "Date histogram + count \u2014 single token, service filter, full corpus",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"payment\") AND ServiceName == \"checkout\" | STATS cnt = COUNT() BY hour = BUCKET(Timestamp, 1 HOUR) | SORT hour ASC"
+  },
+  {
+    "label": "Q9",
+    "description": "Date histogram 1hr + count \u2014 AND, full corpus",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"connection reset\", {\"operator\": \"and\"}) | STATS cnt = COUNT() BY hour = BUCKET(Timestamp, 1 HOUR) | SORT hour ASC"
+  },
+  {
+    "label": "Q10",
+    "description": "GROUP BY service + distinct TraceId count \u2014 OR, full corpus",
+    "esql": "FROM otel_logs | WHERE MATCH(Body, \"exception timeout failed\") | STATS cnt = COUNT(), unique_traces = COUNT_DISTINCT(TraceId) BY ServiceName | SORT cnt DESC"
+  }
+]

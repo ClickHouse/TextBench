@@ -1,0 +1,28 @@
+scale,query,description,es_dsl_cold_s,es_esql_cold_s,cold_winner,es_dsl_hot_s,es_esql_hot_s,hot_winner
+1b,Q1,"Fetch rows — AND, service filter + time-bounded 30 min",1.372,1.773,DSL,0.159,0.192,DSL
+1b,Q2,"Fetch rows — complex boolean, service+severity+time 30min",1.710,3.039,DSL,0.436,0.591,DSL
+1b,Q3,"Fetch rows — OR 5 tokens, full corpus",3.286,3.930,DSL,0.578,0.575,ESQL
+1b,Q4,"count() — single token, full corpus",0.049,0.482,DSL,0.003,0.010,DSL
+1b,Q5,"count() — OR 5 high-frequency tokens, full corpus",0.422,0.853,DSL,0.042,0.047,DSL
+1b,Q6,"GROUP BY service + count — OR, full corpus",0.616,1.144,DSL,0.361,0.446,DSL
+1b,Q7,"GROUP BY service + count — AND, full corpus",0.433,0.895,DSL,0.061,0.106,DSL
+1b,Q8,"Date histogram + count — single token, service filter",0.351,0.811,DSL,0.019,0.033,DSL
+1b,Q9,"Date histogram 1hr + count — AND, full corpus",1.310,1.843,DSL,0.117,0.158,DSL
+10b,Q1,"Fetch rows — AND, service filter + time-bounded 30 min",1.516,3.381,DSL,0.178,0.527,DSL
+10b,Q2,"Fetch rows — complex boolean, service+severity+time 30min",2.119,6.947,DSL,0.566,1.836,DSL
+10b,Q3,"Fetch rows — OR 5 tokens, full corpus",6.372,28.807,DSL,1.108,3.225,DSL
+10b,Q4,"count() — single token, full corpus",0.080,0.509,DSL,0.009,0.023,DSL
+10b,Q5,"count() — OR 5 high-frequency tokens, full corpus",2.431,1.783,ESQL,0.363,0.282,ESQL
+10b,Q6,"GROUP BY service + count — OR, full corpus",3.769,3.274,ESQL,3.348,2.421,ESQL
+10b,Q7,"GROUP BY service + count — AND, full corpus",1.466,1.686,DSL,0.806,0.646,ESQL
+10b,Q8,"Date histogram + count — single token, service filter",1.553,1.497,ESQL,0.166,0.169,DSL
+10b,Q9,"Date histogram 1hr + count — AND, full corpus",11.255,11.239,ESQL,1.347,1.038,ESQL
+50b,Q1,"Fetch rows — AND, service filter + time-bounded 30 min",1.344,2.950,DSL,0.229,0.409,DSL
+50b,Q2,"Fetch rows — complex boolean, service+severity+time 30min",2.103,5.231,DSL,0.679,1.289,DSL
+50b,Q3,"Fetch rows — OR 5 tokens, full corpus",6.553,145.888,DSL,1.102,128.331,DSL
+50b,Q4,"count() — single token, full corpus",0.182,0.616,DSL,0.025,0.047,DSL
+50b,Q5,"count() — OR 5 high-frequency tokens, full corpus",11.293,8.116,ESQL,1.845,1.288,ESQL
+50b,Q6,"GROUP BY service + count — OR, full corpus",19.858,14.512,ESQL,18.887,12.250,ESQL
+50b,Q7,"GROUP BY service + count — AND, full corpus",6.116,4.883,ESQL,4.006,3.327,ESQL
+50b,Q8,"Date histogram + count — single token, service filter",6.488,6.530,DSL,0.748,0.749,DSL
+50b,Q9,"Date histogram 1hr + count — AND, full corpus",57.498,57.635,DSL,6.645,5.437,ESQL

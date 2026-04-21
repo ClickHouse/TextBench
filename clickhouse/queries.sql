@@ -75,14 +75,3 @@ FROM otel_logs
 WHERE hasAllTokens(Body, ['connection', 'reset'])
 GROUP BY hour
 ORDER BY hour;
-
-
--- Q10: GROUP BY service + distinct TraceId count — OR, full corpus
-SELECT
-  ServiceName,
-  count() AS cnt,
-  uniq(TraceId) AS unique_traces
-FROM otel_logs
-WHERE hasAnyTokens(Body, ['exception', 'timeout', 'failed'])
-GROUP BY ServiceName
-ORDER BY cnt DESC;

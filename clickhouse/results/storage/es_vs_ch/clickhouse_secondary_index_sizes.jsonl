@@ -1,0 +1,3 @@
+{"database":"text_bench_1B","table":"otel_logs","size_inverted_index":10894247839}
+{"database":"text_bench_10B","table":"otel_logs","size_inverted_index":110741066018}
+{"database":"text_bench_50B","table":"otel_logs","size_inverted_index":554065900019}

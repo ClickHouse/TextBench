@@ -3,6 +3,11 @@ set -euo pipefail
 
 if [[ $# -lt 6 || $# -gt 7 ]]; then
     echo "Usage: $0 <DATA_DIRECTORY> <DB_NAME> <TABLE_NAME> <MAX_FILES> <SUCCESS_LOG> <ERROR_LOG> [PARALLEL_WORKERS]"
+    echo
+    echo "Remote ClickHouse Cloud connection (optional env vars):"
+    echo "  export FQDN=<host>        e.g. wjgkgcnnmt.us-east-2.aws.clickhouse-staging.com"
+    echo "  export PASSWORD=<password>"
+    echo "  export CH_USER=<user>     (default: default)"
     exit 1
 fi
 
@@ -19,6 +24,23 @@ PARALLEL_WORKERS="${7:-1}"
 [[ ! "$PARALLEL_WORKERS" =~ ^[0-9]+$ ]] && { echo "Error: PARALLEL_WORKERS must be a positive integer."; exit 1; }
 [[ "$PARALLEL_WORKERS" -lt 1 ]] && { echo "Error: PARALLEL_WORKERS must be >= 1."; exit 1; }
 
+# ---------------------------------------------------------------------------
+# Build ClickHouse connection flags.
+# When FQDN and PASSWORD are set, connect to ClickHouse Cloud over TLS.
+# Otherwise fall back to the default localhost connection.
+# ---------------------------------------------------------------------------
+CH_OPTS=()
+if [[ -n "${FQDN:-}" && -n "${PASSWORD:-}" ]]; then
+    CH_USER="${CH_USER:-default}"
+    CH_OPTS=(
+        --host="$FQDN"
+        --user="$CH_USER"
+        --password="$PASSWORD"
+        --secure
+        --enable_full_text_index=1
+    )
+fi
+
 touch "$SUCCESS_LOG" "$ERROR_LOG"
 
 echo "=== Load started at $(date '+%Y-%m-%d %H:%M:%S') ==="
@@ -27,6 +49,11 @@ echo "Table:            $TABLE_NAME"
 echo "Data directory:   $DATA_DIRECTORY"
 echo "Max files:        $MAX_FILES"
 echo "Parallel workers: $PARALLEL_WORKERS"
+if [[ ${#CH_OPTS[@]} -gt 0 ]]; then
+    echo "Target:           ${CH_USER:-default}@${FQDN} (secure)"
+else
+    echo "Target:           localhost (default)"
+fi
 echo
 
 mapfile -t files < <(
@@ -56,7 +83,7 @@ load_one_file() {
 
     echo "[$(date '+%H:%M:%S')] START  $fname"
 
-    if clickhouse client \
+    if clickhouse client "${CH_OPTS[@]}" \
         --async_insert=0 \
         --query "INSERT INTO ${DB_NAME}.${TABLE_NAME} FORMAT Parquet" \
         < "$file"; then
@@ -69,6 +96,10 @@ load_one_file() {
         return 1
     fi
 }
+
+# Export so subshells spawned by & can see CH_OPTS
+export -f load_one_file
+export CH_OPTS DB_NAME TABLE_NAME SUCCESS_LOG ERROR_LOG
 
 for file in "${files[@]}"; do
     load_one_file "$file" &

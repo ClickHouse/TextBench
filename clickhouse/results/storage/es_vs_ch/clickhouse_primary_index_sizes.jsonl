@@ -1,0 +1,3 @@
+{"database":"text_bench_1B","table":"otel_logs","size_sparse_primary_index":6780681}
+{"database":"text_bench_10B","table":"otel_logs","size_sparse_primary_index":67384978}
+{"database":"text_bench_50B","table":"otel_logs","size_sparse_primary_index":336136527}

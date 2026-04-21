@@ -18,8 +18,35 @@ DATABASE=""
 MACHINE=""
 DATASET_SIZE=""
 TOTAL_SIZE=""
-DATA_SIZE=""
+DATA_SIZE=0
 TEXT_INDEX_SIZE=""
+CLUSTER_SIZE=1
+PARALLEL_REPLICAS=0
+COMMENT=""
+TAGS='["C++","column-oriented","ClickHouse","managed","aws"]'
+LOAD_TIME=0
+PROPRIETARY="yes"
+TUNED="no"
+
+# ============================================================
+# Remote connection (env-var driven)
+# When FQDN and PASSWORD are set, connect to ClickHouse Cloud
+# over TLS instead of localhost.  CH_USER is an optional override
+# (default: default).
+# ============================================================
+CH_OPTS=()
+REMOTE=0
+
+if [[ -n "${FQDN:-}" && -n "${PASSWORD:-}" ]]; then
+    CH_USER="${CH_USER:-default}"
+    CH_OPTS=(
+        --host="$FQDN"
+        --user="$CH_USER"
+        --password="$PASSWORD"
+        --secure
+    )
+    REMOTE=1
+fi
 
 # ============================================================
 # Logging
@@ -66,6 +93,21 @@ Optional:
   --data-size N             Data size
   --text-index-size N       Text index size
   --client PATH             clickhouse-client binary (default: clickhouse-client)
+  --parallel-replicas 0|1   Enable parallel replicas (default: 0)
+  --cluster-size N          Number of nodes for max_parallel_replicas (default: 1)
+  --comment TEXT            Free-text comment included in JSON output
+  --tags JSON               JSON array string of tags (e.g. '["cloud","aws"]')
+  --load-time N             Load time in seconds (default: omitted)
+  --proprietary yes|no      Proprietary flag in JSON output
+  --tuned yes|no            Tuned flag in JSON output
+
+Remote ClickHouse Cloud (env vars, no flags needed):
+  export FQDN=<host>        e.g. wjgkgcnnmt.us-east-2.aws.clickhouse-staging.com
+  export PASSWORD=<password>
+  export CH_USER=<user>     (default: default)
+
+  When FQDN+PASSWORD are set the script connects over TLS and skips the
+  local restart-and-drop-caches step (not applicable to a managed service).
 
 Examples:
   ./run_queries.sh --query-file queries_10B.sql --database logs --dry-run
@@ -126,6 +168,34 @@ while [[ $# -gt 0 ]]; do
             CLIENT="${2:-}"
             shift 2
             ;;
+        --parallel-replicas)
+            PARALLEL_REPLICAS="${2:-}"
+            shift 2
+            ;;
+        --cluster-size)
+            CLUSTER_SIZE="${2:-}"
+            shift 2
+            ;;
+        --comment)
+            COMMENT="${2:-}"
+            shift 2
+            ;;
+        --tags)
+            TAGS="${2:-}"
+            shift 2
+            ;;
+        --load-time)
+            LOAD_TIME="${2:-}"
+            shift 2
+            ;;
+        --proprietary)
+            PROPRIETARY="${2:-}"
+            shift 2
+            ;;
+        --tuned)
+            TUNED="${2:-}"
+            shift 2
+            ;;
         -h|--help)
             usage
             exit 0
@@ -141,6 +211,19 @@ done
 [[ -n "$DATABASE" ]] || die "--database is mandatory"
 [[ "$RUNS_PER_QUERY" =~ ^[0-9]+$ ]] || die "--runs must be a positive integer"
 [[ "$RUNS_PER_QUERY" -ge 1 ]] || die "--runs must be >= 1"
+[[ "$PARALLEL_REPLICAS" =~ ^[01]$ ]] || die "--parallel-replicas must be 0 or 1"
+if [[ -n "$CLUSTER_SIZE" ]]; then
+    [[ "$CLUSTER_SIZE" =~ ^[0-9]+$ && "$CLUSTER_SIZE" -ge 1 ]] || die "--cluster-size must be a positive integer"
+fi
+# When parallel replicas are enabled, default cluster-size to 1 if not set
+[[ "$PARALLEL_REPLICAS" == "1" && -z "$CLUSTER_SIZE" ]] && CLUSTER_SIZE=1
+
+# Always build comment, appending parallel_replicas flag
+if [[ -n "$COMMENT" ]]; then
+    COMMENT="${COMMENT} (enable_parallel_replicas=${PARALLEL_REPLICAS})"
+else
+    COMMENT="(enable_parallel_replicas=${PARALLEL_REPLICAS})"
+fi
 
 # ============================================================
 # Helpers
@@ -169,7 +252,7 @@ wait_for_clickhouse() {
     log "Waiting for ClickHouse to become ready..."
 
     for ((attempt=1; attempt<=max_attempts; attempt++)); do
-        if "$CLIENT" -d "$DATABASE" -q "SELECT 1" >/dev/null 2>&1; then
+        if "$CLIENT" "${CH_OPTS[@]}" -d "$DATABASE" -q "SELECT 1" >/dev/null 2>&1; then
             log "ClickHouse is ready."
             return 0
         fi
@@ -182,6 +265,11 @@ wait_for_clickhouse() {
 }
 
 restart_and_drop_caches() {
+    if [[ "$REMOTE" == "1" ]]; then
+        log "Remote mode: skipping restart_and_drop_caches (not applicable to ClickHouse Cloud)."
+        return 0
+    fi
+
     log "Starting restart_and_drop_caches()"
 
     log "Stopping ClickHouse..."
@@ -238,7 +326,7 @@ get_version() {
     fi
 
     log "Fetching ClickHouse version via SELECT version()..."
-    "$CLIENT" -d "$DATABASE" -q "SELECT version()" | head -n1 | tr -d '\r'
+    "$CLIENT" "${CH_OPTS[@]}" -d "$DATABASE" -q "SELECT version()" | head -n1 | tr -d '\r'
 }
 
 get_date_str() {
@@ -280,7 +368,7 @@ run_query() {
     tmp_stdout="$(mktemp)"
     tmp_stderr="$(mktemp)"
 
-    if ! "$CLIENT" -d "$DATABASE" --time -q "$query" >"$tmp_stdout" 2>"$tmp_stderr"; then
+    if ! "$CLIENT" "${CH_OPTS[@]}" -d "$DATABASE" --time -q "$query" >"$tmp_stdout" 2>"$tmp_stderr"; then
         error "Query run $run_no failed."
         error "Query was:"
         printf '%s\n' "$query" >&2
@@ -314,45 +402,6 @@ run_query() {
     printf '%s' "$elapsed"
 }
 
-print_json() {
-    local version="$1"
-    local date_str="$2"
-    shift 2
-    local -a rows=("$@")
-
-    echo "{"
-    echo "  \"system\": \"$(json_escape "$SYSTEM")\","
-    echo "  \"version\": \"$(json_escape "$version")\","
-    echo "  \"os\": \"$(json_escape "$OS_NAME")\","
-    echo "  \"date\": \"$(json_escape "$date_str")\","
-
-    if [[ -n "$MACHINE" ]]; then
-        echo "  \"machine\": \"$(json_escape "$MACHINE")\","
-    fi
-    if [[ -n "$DATASET_SIZE" ]]; then
-        echo "  \"dataset_size\": $DATASET_SIZE,"
-    fi
-    if [[ -n "$TOTAL_SIZE" ]]; then
-        echo "  \"total_size\": $TOTAL_SIZE,"
-    fi
-    if [[ -n "$DATA_SIZE" ]]; then
-        echo "  \"data_size\": $DATA_SIZE,"
-    fi
-    if [[ -n "$TEXT_INDEX_SIZE" ]]; then
-        echo "  \"text_index_size\": $TEXT_INDEX_SIZE,"
-    fi
-
-    echo "  \"result\": ["
-    for i in "${!rows[@]}"; do
-        if [[ "$i" -lt $((${#rows[@]} - 1)) ]]; then
-            echo "${rows[$i]},"
-        else
-            echo "${rows[$i]}"
-        fi
-    done
-    echo "  ]"
-    echo "}"
-}
 
 # ============================================================
 # Main
@@ -364,11 +413,24 @@ log "Dry run       : $DRY_RUN"
 log "Runs/query    : $RUNS_PER_QUERY"
 log "Client        : $CLIENT"
 
+if [[ "$REMOTE" == "1" ]]; then
+    log "Target        : ${CH_USER:-default}@${FQDN} (ClickHouse Cloud / TLS)"
+else
+    log "Target        : localhost (default)"
+fi
+
 if [[ -n "$MACHINE" ]]; then log "Machine       : $MACHINE"; fi
 if [[ -n "$DATASET_SIZE" ]]; then log "Dataset size  : $DATASET_SIZE"; fi
 if [[ -n "$TOTAL_SIZE" ]]; then log "Total size    : $TOTAL_SIZE"; fi
 if [[ -n "$DATA_SIZE" ]]; then log "Data size     : $DATA_SIZE"; fi
 if [[ -n "$TEXT_INDEX_SIZE" ]]; then log "Text idx size : $TEXT_INDEX_SIZE"; fi
+log "Parallel repl : $PARALLEL_REPLICAS"
+if [[ "$PARALLEL_REPLICAS" == "1" ]]; then log "Cluster size  : ${CLUSTER_SIZE:-1}"; fi
+if [[ -n "$COMMENT" ]]; then log "Comment       : $COMMENT"; fi
+if [[ -n "$TAGS" ]]; then log "Tags          : $TAGS"; fi
+if [[ -n "$LOAD_TIME" ]]; then log "Load time     : $LOAD_TIME"; fi
+if [[ -n "$PROPRIETARY" ]]; then log "Proprietary   : $PROPRIETARY"; fi
+if [[ -n "$TUNED" ]]; then log "Tuned         : $TUNED"; fi
 
 mapfile -d '' -t QUERIES < <(extract_queries "$QUERY_FILE")
 [[ "${#QUERIES[@]}" -gt 0 ]] || die "No queries found in $QUERY_FILE"
@@ -385,7 +447,10 @@ RESULT_ROWS=()
 
 for idx in "${!QUERIES[@]}"; do
     query_no=$((idx + 1))
-    query="$(trim "${QUERIES[$idx]}")"
+    query="$(trim "${QUERIES[$idx]}")
+SETTINGS enable_full_text_index=1,
+         enable_parallel_replicas=${PARALLEL_REPLICAS},
+         max_parallel_replicas=${CLUSTER_SIZE}"
 
     log "============================================================"
     log "Processing query $query_no/${#QUERIES[@]}"
@@ -408,7 +473,43 @@ for idx in "${!QUERIES[@]}"; do
     log "Finished query $query_no. Collected runtimes: [$(printf '%s' "${runtimes[0]}"; for ((i=1; i<${#runtimes[@]}; i++)); do printf ',%s' "${runtimes[$i]}"; done)]"
 done
 
+# Build result block (drop trailing comma on last row)
+RESULT_CLEAN="$(
+    for i in "${!RESULT_ROWS[@]}"; do
+        if [[ "$i" -lt $((${#RESULT_ROWS[@]} - 1)) ]]; then
+            echo "${RESULT_ROWS[$i]},"
+        else
+            echo "${RESULT_ROWS[$i]}"
+        fi
+    done
+)"
+
+# Optional fields
+EXTRA_FIELDS=""
+[[ -n "$DATASET_SIZE"    ]] && EXTRA_FIELDS+="  \"dataset_size\": $DATASET_SIZE,"$'\n'
+[[ -n "$TOTAL_SIZE"      ]] && EXTRA_FIELDS+="  \"total_size\": $TOTAL_SIZE,"$'\n'
+[[ -n "$TEXT_INDEX_SIZE" ]] && EXTRA_FIELDS+="  \"text_index_size\": $TEXT_INDEX_SIZE,"$'\n'
+
 log "Printing result JSON to stdout..."
-print_json "$VERSION" "$DATE_STR" "${RESULT_ROWS[@]}"
+cat <<JSON
+{
+  "system": "$SYSTEM",
+  "version": "$VERSION",
+  "os": "$OS_NAME",
+  "date": "$DATE_STR",
+  "machine": "$MACHINE",
+  "cluster_size": $CLUSTER_SIZE,
+  "enable_parallel_replicas": $PARALLEL_REPLICAS,
+  "proprietary": "$PROPRIETARY",
+  "tuned": "$TUNED",
+  "comment": "$COMMENT",
+  "tags": $TAGS,
+  "load_time": $LOAD_TIME,
+  "data_size": $DATA_SIZE,
+${EXTRA_FIELDS}  "result": [
+$RESULT_CLEAN
+  ]
+}
+JSON
 
 log "Benchmark script finished successfully."

@@ -1,0 +1,71 @@
+{
+  "system": "ClickHouse",
+  "version": "26.2.1.235",
+  "os": "Ubuntu 24.04.1 LTS",
+  "date": "2026-04-18",
+  "machine": "120GiB",
+  "cluster_size": 20,
+  "enable_parallel_replicas": 1,
+  "proprietary": "yes",
+  "tuned": "no",
+  "comment": "(enable_parallel_replicas=1)",
+  "tags": [
+    "C++",
+    "column-oriented",
+    "ClickHouse",
+    "managed",
+    "aws"
+  ],
+  "load_time": 0,
+  "data_size": 99068986216,
+  "dataset_size": 50000000000,
+  "total_size": 99560268152,
+  "text_index_size": 491281201,
+  "result": [
+    [
+      0.365,
+      0.409,
+      0.095
+    ],
+    [
+      0.108,
+      0.198,
+      0.106
+    ],
+    [
+      1.047,
+      0.91,
+      1.051
+    ],
+    [
+      0.212,
+      0.169,
+      0.218
+    ],
+    [
+      0.507,
+      0.458,
+      0.49
+    ],
+    [
+      0.514,
+      0.546,
+      0.531
+    ],
+    [
+      0.271,
+      0.439,
+      0.319
+    ],
+    [
+      0.373,
+      0.338,
+      0.299
+    ],
+    [
+      0.339,
+      0.471,
+      0.432
+    ]
+  ]
+}

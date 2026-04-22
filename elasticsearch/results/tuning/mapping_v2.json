@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "number_of_shards":   $SHARDS,
+    "number_of_replicas": 0,
+    "refresh_interval":   "30s",
+    "codec":              "best_compression",
+    "sort": {
+      "field": ["ServiceName", "Timestamp"],
+      "order": ["asc", "asc"]
+    }
+  },
+  "mappings": {
+    "properties": {
+      "Timestamp":          { "type": "date_nanos" },
+      "TraceId":            { "type": "keyword" },
+      "SpanId":             { "type": "keyword" },
+      "TraceFlags":         { "type": "byte" },
+      "SeverityText":       { "type": "keyword" },
+      "SeverityNumber":     { "type": "byte" },
+      "ServiceName":        { "type": "keyword" },
+      "Body":               { "type": "text", "index_options": "docs", "norms": false },
+      "ResourceSchemaUrl":  { "type": "keyword" },
+      "ResourceAttributes": { "type": "flattened" },
+      "ScopeSchemaUrl":     { "type": "keyword" },
+      "ScopeName":          { "type": "keyword" },
+      "ScopeVersion":       { "type": "keyword" },
+      "ScopeAttributes":    { "type": "flattened" },
+      "LogAttributes":      { "type": "flattened" }
+    }
+  }
+}

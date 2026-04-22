@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "number_of_shards":   $SHARDS,
+    "number_of_replicas": 0,
+    "refresh_interval":   "30s",
+    "codec":              "best_compression",
+    "sort": {
+      "field": ["ServiceName", "Timestamp"],
+      "order": ["asc", "asc"]
+    }
+  },
+  "mappings": {
+    "properties": {
+      "Timestamp":          { "type": "date_nanos" },
+      "TraceId":            { "type": "keyword",  "index": false },
+      "SpanId":             { "type": "keyword",  "index": false },
+      "TraceFlags":         { "type": "byte" },
+      "SeverityText":       { "type": "keyword",  "index_options": "docs", "norms": false },
+      "SeverityNumber":     { "type": "byte" },
+      "ServiceName":        { "type": "keyword",  "index_options": "docs", "norms": false },
+      "Body":               { "type": "text",     "index_options": "docs", "norms": false },
+      "ResourceSchemaUrl":  { "type": "keyword",  "index": false },
+      "ResourceAttributes": { "type": "flattened", "index": false },
+      "ScopeSchemaUrl":     { "type": "keyword",  "index": false },
+      "ScopeName":          { "type": "keyword",  "index": false },
+      "ScopeVersion":       { "type": "keyword",  "index": false },
+      "ScopeAttributes":    { "type": "flattened", "index": false },
+      "LogAttributes":      { "type": "flattened", "index": false }
+    }
+  }
+}

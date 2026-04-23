@@ -149,46 +149,9 @@ SELECT toStartOfHour(Timestamp) AS hour, count() AS cnt FROM otel_logs
 WHERE hasAllTokens(Body, ['connection', 'reset'])
 GROUP BY hour ORDER BY hour;
 ```
-
-## Repository Structure
-
-```
-textBench/
-├── results/                    # Canonical benchmark results (one JSON per system × scale)
-├── clickhouse/
-│   ├── create.sql              # Table DDL with text index
-│   ├── create_and_load.sh      # Orchestrates table creation + ingest
-│   ├── load_data.sh            # Parallel Parquet loader
-│   ├── run_queries.sh          # Query benchmark harness (cold/hot)
-│   ├── queries_10.sql          # 10 benchmark queries
-│   └── results/                # All historical run outputs
-│
-└── elasticsearch/
-    ├── install.sh              # Installs Elasticsearch + Python venv
-    ├── create_indexes.sh       # Creates indices + aliases per dataset scale
-    ├── load_data.sh            # Downloads from S3 and ingests via ingest.py
-    ├── ingest.py               # Multi-process Parquet → ES bulk loader
-    ├── transform.js            # Arrow → ES document transform
-    ├── run_queries.sh          # Query benchmark harness (cold/hot, DSL)
-    ├── run_queries_esql.sh     # Query benchmark harness (ES|QL)
-    ├── benchmark.sh            # End-to-end benchmark runner (DSL)
-    ├── benchmark_esql.sh       # End-to-end benchmark runner (ES|QL)
-    ├── disk_usage.sh           # Per-field disk usage analysis
-    ├── queries_10.json         # 10 benchmark queries (DSL)
-    ├── queries_10_esql.json    # 10 benchmark queries (ES|QL)
-    ├── config/                 # elasticsearch.yml, jvm.options
-    └── results/                # All historical run outputs
-```
-
 ---
 
 ## Reproducing the Benchmark
-
-### Prerequisites
-
-- AWS EC2 `m6i.8xlarge` in **eu-west-3**
-- 30 TiB gp3 EBS volume
-- ClickHouse 26.3+ or Elasticsearch 9.3+
 
 ### ClickHouse
 
